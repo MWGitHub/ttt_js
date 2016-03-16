@@ -1,0 +1,79 @@
+html, body, ul, li, p, h1, figure {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	background: transparent;
+
+	text-align: inherit;
+	color: inherit;
+}
+
+body {
+	font-family: sans-serif;
+}
+
+li {
+	list-style: none;
+}
+
+h1 {
+	font-size: 64px;
+	font-weight: 700;
+	margin: 0 auto;
+	text-align: center;
+}
+
+h2 {
+	text-align: center;
+}
+
+.group:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.game-grid {
+  margin: 20px auto;
+  width: 300px;
+  border: 5px solid black;
+}
+
+.game-grid > li {
+  width: 90px;
+  height: 90px;
+  border: 5px solid black;
+  float: left;
+  background-color: gray;
+  cursor: pointer;
+}
+
+.game-grid > li:hover {
+  background-color: yellow;
+}
+
+.game-grid > li.x, .game-grid > li.o {
+	background-color: white;
+	font-size: 64px;
+	text-align: center;
+	font-weight: 700;
+}
+
+.x:after {
+	content: 'x';
+}
+
+.o:after {
+	content: 'o';
+}
+
+.game-grid > li.loser {
+	color: red;
+	background-color: white;
+}
+
+.game-grid > li.winner {
+	color: white;
+	background-color: green;
+}
